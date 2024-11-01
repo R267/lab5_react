@@ -1,7 +1,7 @@
 import React from 'react';
 
 const MenuItem = ({ text, url }) => {
-  const isExternalLink = url && !url.startsWith(window.location.origin);
+  const isExternalLink = url && !url.startsWith(window.location.origin) && !url.startsWith('/');
 
   return (
     <li>
